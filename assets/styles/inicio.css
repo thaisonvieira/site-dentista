@@ -11,57 +11,36 @@
     font-family: "Lato", sans-serif;
 }
 
-@media (max-width: 1366px){
+@media screen and (min-width: 1200px){
 
     .header-nav{
         background-image: linear-gradient(to left, #00D4FC, #0074EC, #0313DD);
     }
 
     .container{
-        max-width: 1170px;
-        margin-right: auto;
-        margin-left: auto;
+        max-width: 1200px;
+        margin: 0px auto;
     }
 
-    .desktop-nav{
-        display: table;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         height: 115px;
         width: 100%;
         padding: 15px;
     }
 
-    .desktop-nav h1 a img{
-        display: table-cell;
-        vertical-align: middle;
-    }
-    .desktop-nav nav{
-        display: table-cell;
-        vertical-align: middle;
-        width: 85%;
-    }
-
-    .desktop-nav nav ul{
+    nav ul{
+        display: flex;
         list-style: none;
-        text-align: right;
+        gap: 40px;
     }
 
-    .desktop-nav nav ul li{   
-        display: inline-block;
-        text-align: center;
-        margin-left: 40px;
-    }
-
-    .desktop-nav nav ul li a{
+    nav ul li a{
         color: #fff;
         font-size: 16px;
         text-transform: uppercase;
         text-decoration: none;
-    }
-
-    .desktop-nav nav ul li address{
-        display: inline-block;
-        color: #fff;
-        font-size: 16px;
-        font-style: normal;
     }
 }
