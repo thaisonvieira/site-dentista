@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root{
-    --primary-color: #0313DD;
+    --color1: #0313DD;
+    --color2: #0074EC;
+    --color3: #00D4FC;
 }
 
 *{
@@ -11,22 +13,36 @@
     font-family: "Lato", sans-serif;
 }
 
-@media screen and (min-width: 1200px){
+a {
+    text-decoration: none;
+    color: #272727;
+}
 
-    .header-nav{
-        background-image: linear-gradient(to left, #00D4FC, #0074EC, #0313DD);
-    }
+@media screen and (min-width: 1200px){
 
     .container{
         max-width: 1200px;
         margin: 0px auto;
     }
 
-    nav{
+    header{
+        border-top: 2px solid rgba(199, 199, 199, 0.5);
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        height: 90px;
+        width: 100%;
+        padding: 15px;
+        background-color: #fff;
+    }
+
+    header nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 115px;
+        height: 45px;
         width: 100%;
         padding: 15px;
     }
@@ -38,9 +54,18 @@
     }
 
     nav ul li a{
-        color: #fff;
         font-size: 16px;
-        text-transform: uppercase;
-        text-decoration: none;
+    }
+
+    .hero {
+        height: 350px;
+        background-image: linear-gradient(to right, rgba(3, 19, 221, 0.8), rgba(0, 210, 252, 0.8)), url(/assets/images/bg-laptop.jpg);
+        background-position: center;
+    }
+
+    .hero .hero-content img {
+        position: absolute;
+        height: 350px;
+        right: 0px;
     }
 }
